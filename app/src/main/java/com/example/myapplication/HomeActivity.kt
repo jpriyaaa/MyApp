@@ -36,7 +36,7 @@ class HomeActivity : AppCompatActivity() , Player.Listener{
         val sharedPreferences: SharedPreferences = this.getSharedPreferences("passwordPreference", Context.MODE_PRIVATE)
 
        /* getBytedatafromvideo();*/
-        playerView = findViewById(R.id.playerView)
+        //playerView = findViewById(R.id.playerView)
 
        /* try {
 
@@ -56,22 +56,22 @@ class HomeActivity : AppCompatActivity() , Player.Listener{
 
     }
 
-    private fun initPlayer() {
+    /*private fun initPlayer() {
 
         // Create a player instance.
-        mPlayer = SimpleExoPlayer.Builder(this).build()
+        //mPlayer = SimpleExoPlayer.Builder(this).build()
 
         // Bind the player to the view.
-        playerView.player = mPlayer
+        //playerView.player = mPlayer
 
         //setting exoplayer when it is ready.
-        mPlayer!!.playWhenReady = true
+        //mPlayer!!.playWhenReady = true
 
         // Set the media source to be played.
-        mPlayer!!.setMediaSource(buildMediaSource())
+        //mPlayer!!.setMediaSource(buildMediaSource())
 
         // Prepare the player.
-        mPlayer!!.prepare()
+        //mPlayer!!.prepare()
 
     }
 
@@ -87,9 +87,9 @@ class HomeActivity : AppCompatActivity() , Player.Listener{
         if (Util.SDK_INT < 24 || mPlayer == null) {
             initPlayer()
         }
-    }
+    }*/
 
-    override fun onPause() {
+    /*override fun onPause() {
         super.onPause()
         if (Util.SDK_INT < 24) {
             releasePlayer()
@@ -140,7 +140,7 @@ class HomeActivity : AppCompatActivity() , Player.Listener{
         fis.close()
         /*val encodedString = encodeToString(bytesArray, DEFAULT)*/
         return bytesArray
-    }
+    }*/
 
     /* private fun loadVideofromURL(uri: Uri?) {
          videoView.setMediaController(mediacontroller);
