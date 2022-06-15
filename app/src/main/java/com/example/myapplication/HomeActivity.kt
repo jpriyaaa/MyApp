@@ -38,15 +38,6 @@ class HomeActivity : AppCompatActivity() , Player.Listener{
        /* getBytedatafromvideo();*/
         playerView = findViewById(R.id.playerView)
 
-        val loadControl = DefaultLoadControl.Builder()
-            .setBufferDurationsMs(
-                minBufferMS,
-                maxBufferMs,
-                bufferForPlayackMS,
-                bufferForPlaybackAfterRebufferMs
-            )
-            .createDefaultLoadControl()
-
        /* try {
 
                 val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss")
