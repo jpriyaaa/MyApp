@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
             val editor = passwordPreferences!!.edit()
             editor.putString("password",password)
             editor.apply()
-            var intent = Intent(this@MainActivity,HomeActivity::class.java)
-            startActivity(intent)
+            //var intent = Intent(this@MainActivity,HomeActivity::class.java)
+            //startActivity(intent)
         }
 
 
